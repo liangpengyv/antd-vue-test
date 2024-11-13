@@ -1,5 +1,15 @@
-<script setup></script>
+<template>
+  <div>
+    <a-flex gap="24">
+      <a-button>按钮</a-button>
+      <a-button>按钮</a-button>
+      <a-button>按钮</a-button>
+    </a-flex>
+  </div>
+</template>
 
-<template>AntD Vue Test</template>
+<script setup>
+import { Button as AButton, Flex as AFlex } from 'ant-design-vue'
+</script>
 
 <style scoped></style>
