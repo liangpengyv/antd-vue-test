@@ -1,15 +1,15 @@
 <template>
-  <vue-seamless-scroll class="scroll" :list="list" :hover="true">
+  <vue3-seamless-scroll class="scroll" :list="list" :hover="true">
     <div class="item" v-for="(item, index) in list" :key="index">
       <span>{{ item.title }}</span>
       <span>{{ item.date }}</span>
     </div>
-  </vue-seamless-scroll>
+  </vue3-seamless-scroll>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { Vue3SeamlessScroll as VueSeamlessScroll } from 'vue3-seamless-scroll'
+import { Vue3SeamlessScroll } from 'vue3-seamless-scroll'
 
 const list = ref([
   {
